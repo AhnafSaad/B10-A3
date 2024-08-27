@@ -28,62 +28,109 @@
 
 </head>
 <body class="font-manrope">
-<header class="px-14 py-9">
-   
-   <nav>
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
+    <header class="px-4 py-6 md:px-14 md:py-9">
+        <nav>
+           <div class="navbar bg-base-100">
+              <!-- Navbar Start -->
+              <div class="navbar-start flex items-center justify-between lg:justify-start">
+                 <!-- Logo -->
+                 <a class="btn btn-ghost flex items-center gap-2">
+                   <i class="fa-solid fa-arrow-right bg-[#ABEF5F] transform -rotate-45 rounded-full p-2"></i>
+                   <span class="text-3xl font-extrabold">Rinterio</span>
+                 </a>
+     
+                 <!-- Hamburger Menu for Small Devices -->
+                 <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost flex items-center justify-between">
+                       <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             stroke-width="2"
+                             d="M4 6h16M4 12h8m-8 6h16" />
+                       </svg>
+                    </div>
+                    <!-- Dropdown menu for small devices -->
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                       <!-- Items for small devices -->
+                       <li><a class="flex items-center gap-2">
+                           <i class="fa-solid fa-search"></i>
+                           Search
+                         </a>
+                       </li>
+                       <li><a class="flex items-center gap-2">
+                           <i class="fa-solid fa-cart-shopping"></i>
+                           Shop
+                         </a>
+                       </li>
+                       <li><a class="btn bg-[#ABEF5F] rounded-[34px] font-black flex items-center">
+                           Book Consult
+                           <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1.5 text-white"></i>
+                         </a>
+                       </li>
+                       <li><a>Item 1</a></li>
+                       <li><a>Parent</a></li>
+                       <li><a>Item 3</a></li>
+                       <li><a>Item 4</a></li>
+                       <li><a>Item 5</a></li>
+                    </ul>
+                 </div>
+              </div>
+     
+              <!-- Navbar Center for Larger Devices -->
+              <div class="navbar-center hidden lg:flex">
+                 <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-bold">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                 </ul>
+              </div>
+     
+              <!-- Navbar End (Visible only on small devices) -->
+              <div class="navbar-end hidden lg:flex items-center gap-3">
+                 <!-- Search Icon -->
+                 <a class="flex items-center justify-center w-10 h-10 text-[#737373] bg-white border border-[#737373] rounded-full">
+                   <i class="fa-solid fa-search"></i>
+                 </a>
+               
+                 <!-- Shop Icon -->
+                 <a class="flex items-center justify-center w-10 h-10 text-[#737373] bg-white border border-[#737373] rounded-full">
+                     <i class="fa-solid fa-cart-shopping"></i>
+                 </a>
+     
+                 <!-- Book Consult Button -->
+                 <a class="btn bg-[#ABEF5F] rounded-[34px] font-black flex items-center">
+                   Book Consult
+                   <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1.5 text-white"></i>
+                 </a>
+              </div>
+           </div>
+        </nav>
+     
+        <!-- Banner Section -->
+        <section>
+           <img class="mx-auto my-4 max-w-full h-auto" src="/assets/banner.png" alt="Banner Image">
+           <h1 class="text-4xl md:text-[34px] lg:text-6xl font-extrabold text-center">A barn house of this design has a <br> striking appearance</h1>
+           <p class="py-5 text-center text-[16px]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.</p>
+           <div class="flex justify-center items-center ">
+            <button class="font-extrabold bg-[#ABEF5F80] rounded-full text-lg px-4 py-2.5  lg:text-xl sm:px-9 sm:py-3 sm:text-2xl md:text-xl" >
+                View Details 
+                <span>
+                    <i class="fa-solid fa-arrow-right bg-[#ABEF5F] transform -rotate-45 rounded-full p-2"></i>
+                </span>
+            </button>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-              </li>
-              <li><a>Item 3</a></li>
-              <li><a>Item 4</a></li>
-              <li><a>Item 4</a></li>
-            </ul>
-          </div>
-          <a class="btn btn-ghost flex items-center gap-2">
-            <i class="fa-solid fa-arrow-right bg-[#ABEF5F] transform -rotate-45 rounded-full p-2"></i>
-            <span class="text-3xl font-extrabold">Rinterio</span>
-          </a>
-          
-          
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="font-bold">Home</a></li>
-            <li><a>Services</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact Us</a></li>
-             </ul>
-        </div>
-        <div class="navbar-end">
-            <a class="btn bg-[#ABEF5F] rounded-[34px] font-extrabold">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1.5 text-white"></i></a> 
-          </div>
-          
-      </div>
-
-   </nav>
-</header>
+        </section>
+     </header>
+     
+     
 
     
 </body>
