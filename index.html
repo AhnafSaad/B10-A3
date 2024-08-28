@@ -104,7 +104,7 @@
           </div>
         
           <!-- Center-align "About Us" button on small devices -->
-          <div class="max-w-[128px] flex items-center py-1 px-3 rounded-full bg-white mx-auto md:mx-4 lg:mx-[120px] my-[2px]">
+          <div class="max-w-[128px] flex items-center py-1 px-3  rounded-full bg-white mx-auto md:mx-4 lg:mx-[120px] my-[2px] ">
             <i class="fa-solid fa-arrow-right-long mr-3"></i>
             <a class="font-medium" href="#">About Us</a>
           </div>
@@ -120,7 +120,7 @@
               <div class="grid lg:grid-cols-1 gap-6 md:grid-cols-2">
         
                 <!-- card-1: Ensure full width on small devices -->
-                <div class="bg-white rounded-xl p-4 w-full">
+                <div class="bg-white rounded-xl p-4 w-[400px] lg:w-full">
                   <div><img src="./assets/c" alt=""></div>
                   <div class="flex flex-row items-center gap-x-5">
                     <img src="./assets/commercial.png" alt="">
@@ -132,7 +132,7 @@
                 </div>
         
                 <!-- card-2: Ensure full width on small devices -->
-                <div class="bg-white rounded-xl p-4 w-full">
+                <div class="bg-white rounded-xl p-3 w-[400px] lg:w-full">
                   <div><img src="./assets/c" alt=""></div>
                   <div class="flex flex-row items-center gap-x-5">
                     <img src="./assets/residential.png" alt="">
@@ -227,9 +227,90 @@
 </div>
           </section>
 
-          
-         
+          <section class="mx-auto container lg:max-w-screen-lg max-w-sm  ">
+            <div class="my-24">
+             <!-- Heading -->
+             <div class=" bg-[#ABEF5F33] rounded-full px-6 py-[08px] relative bottom-6 w-fit text-center mx-auto font-extrabold text-grey-2"> <i class="fa-solid fa-arrow-right"></i>  Explore our Latest works</div>
+    
+             <div class="text-center lg:w-2/4 mx-auto mb-8">
+             <h1 class="text-5xl font-bold text-black-1 mb-6">Our Latest Portfolio</h1>
+             <p class="text-grey-2 font-medium">Explore our latest portfolio to see our most recent projects and innovative designs that showcase our expertise.</p>
+             </div>
+    
+              <!-- Grid  -->
+             <div class="grid gap-4 lg:grid-cols-8 lg:grid-rows-2">
+                 <!-- Card 1 -->
+                <div class="lg:flex col-span-4 lg:col-span-5 h-fit gap-6 border p-4 rounded-2xl">
+                 <img class="w-full lg:w-fit" src="assets/img1.png" alt="">
+    
+                 <div class="space-y-4">
+                    <h1 class="font-extrabold text-xl txet-grey-2 mt-4 lg:mt-0">Commercial</h1>
+                    <p class="text-grey-1 font-medium">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
+                    <button class=" bg-transparent font-extrabold text-black-1">View Details  <i class="fa-solid fa-arrow-right bg-[#ABEF5F] transform -rotate-45 rounded-full p-2"></i></button>
+                 </div>
+                </div>
+                 <!-- Card 2 -->
+                <div class="border lg:w-fit lg:h-fit lg:col-span-3 col-span-4 p-4 rounded-2xl w-[400px]">
+                    <img class="h-[230px] lg:h-[205px]" src="assets/img2.png" alt="">
+                </div>
+                <!-- Card 3 -->
+                <div class="border lg:w-fit lg:h-fit p-4 col-span-4 lg:col-span-2 rounded-2xl w-[400px]">
+                    <img class="w-[400px]" src="assets/img3.png" alt="">
+                </div>
+                 <!-- Card 4 -->
+                <div class="lg:flex col-span-4 h-fit gap-4 border p-4 rounded-2xl">
+                  <img class="lg:h-44 w-full lg:w-fit" src="assets/img4.png" alt="">
+                  <div class="space-y-4">
+                     <h1 class="font-extrabold text-xl txet-grey-2 mt-4 lg:mt-0">Commercial</h1>
+                     <p class="text-grey-1 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                     <button class=" font-extrabold text-black-1">View Details  <i class="fa-solid fa-arrow-right bg-[#ABEF5F] transform -rotate-45 rounded-full p-2"></i></button>
+                  </div>
+                 </div>
+                <!-- Card 5 -->
+                 <div class="border lg:w-fit lg:h-fit p-4 col-span-5 lg:col-span-2 rounded-2xl w-[400px]">
+                  <img class="w-[400px]" src="assets/img5.png" alt="">
+                 </div>
+    
+             </div>
+            </div>
+           </section>
+           <section class="bg-[url(assets/bg.jpg)] pb-[120px] bg-cover">
+            <div class="container mx-auto" >
+             <!-- heading -->
+             <div class=" bg-[#ABEF5F33] rounded-full px-6 py-[8px] relative bottom-6 w-fit text-center mx-auto mt-[100px] font-extrabold text-grey-2"> <i class="fa-solid fa-arrow-right"></i> Let’s Connect</div>
+    
+             <div class="text-center lg:w-2/4 w-4/5 mx-auto mb-8 mt-20">
+             <h1 class="text-5xl font-bold text-black-1 mb-6">Let’s Discuss Next Project</h1>
+             <p class="text-grey-2 font-medium">Excited about your next project? Let’s connect to discuss your vision and how we can bring it to life!</p>
+             </div>
+             <!-- Form -->
+            <div class="lg:w-3/5 w-4/5 mx-auto">
+              <label for="" class="grid lg:grid-cols-2 grid-cols-1 gap-5">
+                <input type="text" placeholder="First Name*" class="p-5 rounded-full lg:w-[375px]">
+                <input type="text" placeholder="Last Name*" class="p-5 rounded-full lg:w-[375px]">
+                <input type="text" placeholder="Phone Number*" class="p-5 rounded-full lg:w-[375px]">
+                <input type="text" placeholder="Email Number*" class="p-5 rounded-full lg:w-[375px]">
+
+                <textarea class="h-56 lg:w-[850px] rounded-3xl border-0 pl-5 p-5" placeholder="Write your message here"></textarea>
+              </label>
+
+              <a class="btn bg-[#ABEF5F] rounded-full px-6 font-extrabold text-lg w-full lg:w-[850px] border-0 mt-8">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1.5 text-white"></i>
+              </a>
+              </div>
+         </section> 
        </main>
+<!-- footer section -->
+       <footer class="bg-black pb[50px]">
+        <a class=" flex items-center gap-2 pt-[100px] justify-center">
+          <i class="fa-solid fa-arrow-right bg-[#ABEF5F] transform -rotate-45 rounded-full p-2"></i>
+          <span class="text-3xl text-white font-extrabold">Rinterio</span>
+          <p></p>
+
+          <li>
+
+          </li>
+
+       </footer>
     
     
          
